@@ -20,7 +20,7 @@ video.addEventListener("play", function () {
   canvas.height = video.videoHeight;
   const ctx = canvas.getContext("2d");
   const markerImage = new Image();
-  markerImage.src = "tu-marcador.png"; // Reemplaza con la ruta de tu imagen de marcador
+  markerImage.src = "./imgs/img.png"; // Reemplaza con la ruta de tu imagen de marcador
 
   function detectMarker() {
     ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
@@ -37,7 +37,7 @@ video.addEventListener("play", function () {
 
     requestAnimationFrame(detectMarker);
   }
-  
+
 
   detectMarker();
 });
