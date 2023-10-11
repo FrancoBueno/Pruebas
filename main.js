@@ -37,6 +37,7 @@ video.addEventListener("play", function () {
 
     requestAnimationFrame(detectMarker);
   }
+  
 
   detectMarker();
 });
